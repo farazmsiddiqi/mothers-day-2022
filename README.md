@@ -18,8 +18,8 @@ Microsoft Teams and Skype will think you are online as well!!
 Call Faraz for installation
 
 ```
-cd move-mouse
-pip3 install pynput
+cd mothers-day-2022
+pip install pynput
 cd src
 python move-mouse.py -s 1 -m both -p 10
 ```
