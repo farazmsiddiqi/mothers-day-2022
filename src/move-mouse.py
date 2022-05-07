@@ -5,6 +5,7 @@ import time
 from datetime import datetime
 from pynput.mouse import Controller as MouseController
 from pynput.keyboard import Key, Controller as KeyboardController
+import random
 
 mouse = MouseController()
 keyboard = KeyboardController()
@@ -50,7 +51,7 @@ def define_custom_seconds():
     mode = args.mode
 
     if args.seconds:
-        move_mouse_every_seconds = int(args.seconds)
+        move_mouse_every_seconds = random.randint(1,3)*int(args.seconds)
 
     if args.pixels:
         PIXELS_TO_MOVE = int(args.pixels)
